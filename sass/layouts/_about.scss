@@ -1,36 +1,64 @@
-.soc-list {
-    display: flex;
-    gap: 30px;
-}
-
-.soc-list__item {
-    width: calc((100% - 60px) / 3);
-}
-
-.soc-list__box {
-    position: relative;
-    &::before {
-            display: inline-block;
+.about-us {
+    @media screen and (max-width: 1199px) {
             position: absolute;
-            content: '';
-            background-color: var(--overlay-color-secondary);
-            width: 370px;
-            height: 70px;
-            bottom: 0;
+            width: 1px;
+            height: 1px;
+            margin: -1px;
+            border: 0;
+            padding: 0;
+            white-space: nowrap;
+            clip-path: inset(100%);
+            clip: rect(0 0 0 0);
+            overflow: hidden;
         }
 }
 
+.soc-list {
+    @media screen and (min-width: 1200px) {
+            display: flex;
+            gap: 30px;
+        }
+    
+}
+
+.soc-list__item {
+    @media screen and (min-width: 1200px) {
+            width: calc((100% - 60px) / 3);
+        }
+    
+}
+
+.soc-list__box {
+    
+        @media screen and (min-width: 1200px) {
+            position: relative;
+
+                &::before {
+                    display: inline-block;
+                    position: absolute;
+                    content: '';
+                    background-color: var(--overlay-color-secondary);
+                    width: 370px;
+                    height: 70px;
+                    bottom: 0;
+                }
+                }
+}
+
 .soc-list__text {
-    position: absolute;
-    top: 251px;
-    left: 50%;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14px;
-    text-align: center;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--third-web-text-color);
-    transform: translateX(-50%);
+    
+    @media screen and (min-width: 1200px) {
+            position: absolute;
+                top: 251px;
+                left: 50%;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 1.14px;
+                text-align: center;
+                letter-spacing: 0.03em;
+                text-transform: uppercase;
+                color: var(--third-web-text-color);
+                transform: translateX(-50%);
+        }
 
 }

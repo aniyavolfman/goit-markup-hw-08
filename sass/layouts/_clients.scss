@@ -1,12 +1,23 @@
 .icon-list {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
 .icon-list__link {
     display: inline-flex;
     color: var(--media-color);
-    width: 170px;
+    width: 130px;
+    @media screen and (min-width: 480px) {
+            width: 210px;
+    }
+    @media screen and (min-width: 768px) {
+            width: 226px;
+        }
+    @media screen and (min-width: 1200px) {
+            width: 170px;
+        }
     height: 92px;
     border-radius: 4px;
     align-items: center;
@@ -24,4 +35,14 @@
 
 .icon-list__icon--fill {
     fill: currentColor;
+}
+.icon-list__item {
+    width: calc((100% - 30px) / 2);
+    @media screen and (min-width: 768px) {
+        width: calc((100% - 60px) / 3);
+        }
+    @media screen and (min-width: 1200px) {
+            width: 170px;
+        }
+    
 }

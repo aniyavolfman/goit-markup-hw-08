@@ -1,9 +1,20 @@
 .list.team {
     gap: 30px;
+    flex-wrap: wrap;
+        flex-direction: column;
+        @media screen and (min-width: 768px) {
+            flex-direction: row;
+        }
 }
 
 .gap-team {
-    width: calc((100% - 90px) / 4);
+    @media screen and (min-width: 768px) {
+            width: calc((100% - 30px) / 2);
+        }
+    
+        @media screen and (min-width: 1200px) {
+            width: calc((100% - 90px) / 4);
+        }
 }
 
 .section-fourth {
@@ -18,9 +29,14 @@
 
 .team-card {
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 24px;
     padding-right: 32px;
     padding-left: 32px;
+    @media screen and (min-width: 1200px) {
+            padding-bottom: 30px;
+        }
+    
+
 }
 
 .subtitle {
@@ -43,7 +59,10 @@
 .team-media {
     margin-top: 16px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    @media screen and (min-width: 1200px) {
+            justify-content: space-around;
+        }
 }
 
 .item-media {
