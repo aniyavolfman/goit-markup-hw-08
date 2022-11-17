@@ -1,0 +1,27 @@
+.icon-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon-list__link {
+    display: inline-flex;
+    color: var(--media-color);
+    width: 170px;
+    height: 92px;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--media-color);
+    transition-property: color, border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+            color: var(--secondary-web-text-color);
+            border: 1px solid var(--secondary-web-text-color);
+        }
+}
+
+.icon-list__icon--fill {
+    fill: currentColor;
+}

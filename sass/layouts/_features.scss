@@ -1,0 +1,34 @@
+.list-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    background-color: var(--background-section-fourth);
+}
+
+.title-section {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.text-section {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--contacts);
+}
+
+.list.text {
+    gap: 30px;
+}
+
+.gap-text {
+    width: calc((100% - 90px) / 4);
+}
+

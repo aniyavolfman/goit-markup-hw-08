@@ -1,0 +1,36 @@
+.soc-list {
+    display: flex;
+    gap: 30px;
+}
+
+.soc-list__item {
+    width: calc((100% - 60px) / 3);
+}
+
+.soc-list__box {
+    position: relative;
+    &::before {
+            display: inline-block;
+            position: absolute;
+            content: '';
+            background-color: var(--overlay-color-secondary);
+            width: 370px;
+            height: 70px;
+            bottom: 0;
+        }
+}
+
+.soc-list__text {
+    position: absolute;
+    top: 251px;
+    left: 50%;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--third-web-text-color);
+    transform: translateX(-50%);
+
+}
