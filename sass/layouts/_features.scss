@@ -15,6 +15,10 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     margin-bottom: 10px;
+    text-align: center;
+    @media screen and (min-width: 768px) {
+        text-align: left;
+    }
 }
 
 .text-section {
@@ -26,9 +30,20 @@
 
 .list.text {
     gap: 30px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    @media screen and (min-width: 768px) {
+            flex-direction: row;
+        }
+    outline: 1px solid orange;
 }
 
 .gap-text {
-    width: calc((100% - 90px) / 4);
+    @media screen and (min-width: 768px) {
+            width: calc((100% - 30px) / 2);
+        }
+    @media screen and (min-width: 1200px) {
+        width: calc((100% - 90px) / 4);
+    }
 }
 
