@@ -31,13 +31,10 @@
 .list.text {
     gap: 30px;
     flex-wrap: wrap;
-    flex-direction: column;
-    @media screen and (min-width: 768px) {
-            flex-direction: row;
-        }
 }
 
 .gap-text {
+    width: 100%;
     @media screen and (min-width: 768px) {
             width: calc((100% - 30px) / 2);
         }

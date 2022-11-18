@@ -420,8 +420,10 @@ textarea {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.section.no-padding {
-  padding-bottom: 0;
+@media screen and (min-width: 1200px) {
+  .section.no-padding {
+    padding-bottom: 0;
+  }
 }
 @media screen and (min-width: 1200px) {
   .section {
@@ -655,14 +657,11 @@ textarea {
 .list.text {
   gap: 30px;
   flex-wrap: wrap;
-  flex-direction: column;
-}
-@media screen and (min-width: 768px) {
-  .list.text {
-    flex-direction: row;
-  }
 }
 
+.gap-text {
+  width: 100%;
+}
 @media screen and (min-width: 768px) {
   .gap-text {
     width: calc((100% - 30px) / 2);
@@ -737,14 +736,11 @@ textarea {
 .list.team {
   gap: 30px;
   flex-wrap: wrap;
-  flex-direction: column;
-}
-@media screen and (min-width: 768px) {
-  .list.team {
-    flex-direction: row;
-  }
 }
 
+.gap-team {
+  width: 100%;
+}
 @media screen and (min-width: 768px) {
   .gap-team {
     width: calc((100% - 30px) / 2);
@@ -836,7 +832,6 @@ textarea {
 
 .icon-list {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
   gap: 30px;
 }
@@ -844,7 +839,7 @@ textarea {
 .icon-list__link {
   display: inline-flex;
   color: var(--media-color);
-  width: 130px;
+  width: 100%;
   height: 92px;
   border-radius: 4px;
   align-items: center;
@@ -853,21 +848,6 @@ textarea {
   transition-property: color, border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-@media screen and (min-width: 480px) {
-  .icon-list__link {
-    width: 210px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .icon-list__link {
-    width: 226px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .icon-list__link {
-    width: 170px;
-  }
 }
 .icon-list__link:hover, .icon-list__link:focus {
   color: var(--secondary-web-text-color);
@@ -888,7 +868,7 @@ textarea {
 }
 @media screen and (min-width: 1200px) {
   .icon-list__item {
-    width: 170px;
+    width: calc((100% - 150px) / 6);
   }
 }
 
