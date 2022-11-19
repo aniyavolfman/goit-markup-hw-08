@@ -172,6 +172,9 @@
     background-color: transparent;
     border: none;
     margin-left: auto;
+    @include tablet {
+        display: none;
+    }
 }
 
 .menu-close {
@@ -204,6 +207,9 @@
             pointer-events: none;
             visibility: hidden;
         }
+                @include tablet {
+                    display: none;
+                }
 }
 
 .menu-container {

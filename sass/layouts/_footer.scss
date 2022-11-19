@@ -2,15 +2,37 @@
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: var(--background-dark);
+    
 }
 
 .container-footer {
     display: flex;
-    align-items: baseline;
+    flex-direction: column;
+    @include tablet {
+        flex-direction: row;
+    }
+    gap: 60px;
+        @include desktop {
+        gap: 0;
+        }
+    flex-wrap: wrap;
+    align-items: center;
+        @include tablet {
+            align-items: baseline;
+        }
+    justify-content: center;
+    text-align: center;
+        @include desktop {
+            text-align: left;
+            justify-content: left;
+        }
 }
 
 .bottom-contacts {
-    margin-right: 70px;
+    @include desktop {
+            margin-right: 70px;
+        }
+    
 }
 
 .web-color {
@@ -28,8 +50,12 @@
 .web-studio-footer {
     font-family: var(--secondary-font), sans-serif;
     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
+    font-size: 24px;
+    line-height: 1.17;
+    @include desktop {
+            font-size: 26px;
+            line-height: 1.19;
+        }
     letter-spacing: 0.03em;
     color: var(--third-web-text-color);
 }
@@ -104,14 +130,22 @@
 }
 
 .footer-form {
+    width: 100%;
     position: relative;
     margin-top: 20px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 12px;
+    gap: 20px;
+    @include desktop {
+            gap: 12px;
+        }
     & input {
-            min-width: 358px;
+            min-width: 100%;
+            @include desktop {
+                    min-width: 358px;
+                }
             min-height: 50px;
             border: 1px solid var(--form-footer-color);
             background-color: var(--background-dark);
@@ -152,9 +186,13 @@
     position: absolute;
     top: 50%;
     left: 16px;
-    transform: translateY(-50%);
+    transform: translateY(-225%);
+    @include desktop {
+            transform: translateY(-50%);
+        }
     color: var(--background-rgba);
     font-size: 16px;
     line-height: 1.25;
     letter-spacing: 0.03em;
 }
+
