@@ -1,16 +1,22 @@
 .list.team {
     gap: 30px;
     flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @include tablet {
+        flex-direction: row;
+    }
 }
 
 .gap-team {
     width: 100%;
     @media screen and (min-width: 768px) {
-            width: calc((100% - 30px) / 2);
+        width: calc((100% - 30px) / 2);
         }
     
         @media screen and (min-width: 1200px) {
-            width: calc((100% - 90px) / 4);
+        width: calc((100% - 90px) / 4);
         }
 }
 

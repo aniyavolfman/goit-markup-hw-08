@@ -144,21 +144,39 @@
                 <ul class="soc-list list">
                     <li class="soc-list__item item">
                         <div class="soc-list__box">
-                            <img src="./images/box1.jpg"
-                                alt="Робочий стіл з комп'ютерним монітором, планшетом та клавіатурою на ньому." width="370" height="294">
+                            <picture>
+                                <source srcset="./images/box1.jpg 1x, 
+                                ./images/box1-2px-min.jpg 2x"
+                                media="(min-width: 1200px)">
+                                <img src="./images/box1.jpg" alt="Робочий стіл з комп'ютерним монітором, планшетом та клавіатурою на ньому." width="370"
+                                    height="294">
+                            </picture>                            
                             <p class="soc-list__text">Десктопні додатки</p>
                         </div>
                     </li>
                     <li class="soc-list__item item">
                         <div class="soc-list__box">
-                            <img src="./images/box2.jpg"
-                                alt="Робочий стіл з ноутбуком. На моніторі ноутбука зображені макети додатків для мобільних телефонів." width="370" height="294">
+                            <picture>
+                                <source srcset="
+                                ./images/box2.jpg 1x, 
+                                ./images/box2-2px-min.jpg 2x" 
+                                media="(min-width: 1200px)">
+                                <img src="./images/box2.jpg"
+                                    alt="Робочий стіл з ноутбуком. На моніторі ноутбука зображені макети додатків для мобільних телефонів." width="370"
+                                    height="294">
+                            </picture> 
                             <p class="soc-list__text">Мобільні додатки</p>
                         </div>
                     </li>
                     <li class="soc-list__item  item">
                         <div class="soc-list__box">
-                            <img src="./images/box3.jpg" alt="Планшет з кольоровою палітрою на екрані." width="370"height="294">
+                            <picture>
+                                <source srcset="
+                                ./images/box3.jpg 1x, 
+                                ./images/box3-2px-min.jpg 2x" 
+                                media="(min-width: 1200px)">
+                                <img src="./images/box3.jpg" alt="Планшет з кольоровою палітрою на екрані." width="370" height="294">
+                            </picture>
                             <p class="soc-list__text">Дизайнерські рішення</p>
                         </div>
                     </li>
@@ -171,7 +189,21 @@
                 <h2 class="caption zero">Наша команда</h2>
                 <ul class="list flex team">
                     <li class="item card gap-team ">
-                        <img src="./images/img.jpg" alt="Темноволосий чоловік в окулярах в чорній сорочці." width="270" height="260">
+                        <picture>
+                            <source srcset="
+                            ./images/img.jpg 1x, 
+                            ./images/1photo-min.jpg 2x" 
+                            media="(min-width: 1200px)">
+                            <source srcset="
+                            ./images/1photo1px-tab.jpg 1x, 
+                            ./images/1photo2px-tab.jpg 2x" 
+                            media="(min-width: 768px)">
+                            <source srcset="
+                            ./images/1photo1px-mob.jpg 1x, 
+                            ./images/1photo2px-mob.jpg 2x" 
+                            media="(max-width: 767px)">
+                            <!-- <img src="./images/1photo1px-mob.jpg" alt="Темноволосий чоловік в окулярах в чорній сорочці." width="450" height="460"> -->
+                        </picture>
                         <div class="team-card">
                             <h3 class="subtitle zero">Ігор Дем'яненко</h3>
                             <p class="text-card zero">Product Designer</p>
@@ -208,8 +240,23 @@
                         </div>
                     </li>
                     <li class="item card gap-team " >
-                        <img src="./images/img1.jpg" alt="Жінка з довгим білявим волоссям в окулярах в чорному піджаку." width="270"
-                            height="260">
+                        <!-- <picture>
+                            <source 
+                            srcset="
+                                        ./images/img1.jpg 1x, 
+                                        ./images/2photo-min.jpg 2x
+                                        " 
+                                        media="(min-width: 1200px)">
+                            <source srcset="
+                                        ./images/2photo1px-tab.jpg 1x, 
+                                        ./images/2photo2px-tab.jpg 2x" 
+                                        media="(min-width: 768px)">
+                            <source srcset="
+                                        ./images/2photo1px-mob.jpg 1x, 
+                                        ./images/2photo2px-mob.jpg 2x" 
+                                        media="(max-width: 767px)">
+                            <img src="./images/2photo1px-mob.jpg" alt="Жінка з довгим білявим волоссям в окулярах в чорному піджаку." width="450" height="460">
+                        </picture> -->
                         <div class="team-card">
                             <h3 class="subtitle zero">Ольга Рєпіна</h3>
                             <p class="text-card zero">Frontend Developer</p>
@@ -246,7 +293,18 @@
                         </div>
                     </li>
                     <li class="item card gap-team " >
-                        <img src="./images/img2.jpg" alt="Темноволосий чоловік в білій сорочці" width="270" height="260">
+                        <!-- <picture>
+                            <source srcset="
+                                        ./images/img2.jpg 1x, 
+                                        ./images/3photo-min.jpg 2x" media="(min-width: 1200px)">
+                            <source srcset="
+                                        ./images/3photo1px-tab.jpg 1x, 
+                                        ./images/3photo2px-tab.jpg 2x" media="(min-width: 768px)">
+                            <source srcset="
+                                        ./images/3photo1px-mob.jpg 1x, 
+                                        ./images/3photo2px-mob.jpg 2x" media="(max-width: 767px)">
+                            <img src="./images/3photo1px-mob.jpg" alt="Темноволосий чоловік в білій сорочці" width="450" height="460">
+                        </picture> -->
                         <div class="team-card">
                             <h3 class="subtitle zero">Микола Тарасов</h3>
                             <p class="text-card zero">Marketing</p>
@@ -283,7 +341,21 @@
                         </div>
                     </li>
                     <li class="item card gap-team " >
-                        <img src="./images/img3.jpg" alt="Темноволосий чоловік в окулярах в чорній футболці." width="270" height="260">
+                        <!-- <picture>
+                            <source srcset="
+                                            ./images/img3.jpg 1x, 
+                                            ./images/4photo-min.jpg 2x"
+                                media="(min-width: 1200px)">
+                            <source srcset="
+                                            ./images/4photo1px-tab.jpg 1x, 
+                                            ./images/4photo2px-tab.jpg 2x"
+                                media="(min-width: 768px)">
+                            <source srcset="
+                                            ./images/4photo1px-mob.jpg 1x, 
+                                            ./images/4photo2px-mob.jpg 2x"
+                                media="(max-width: 767px)">
+                            <img src="./images/4photo1px-mob.jpg" alt="Темноволосий чоловік в окулярах в чорній футболці." width="450" height="460">
+                        </picture> -->
                         <div class="team-card">
                             <h3 class="subtitle zero">Михайло Єрмаков</h3>
                             <p class="text-card zero">UI Designer</p>
@@ -485,7 +557,7 @@
         </div>
     </div>
     <script src="./js/modal.js"></script>
-    <script src="./js/menu.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 </html>
 

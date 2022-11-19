@@ -10,14 +10,43 @@
 }
 
 .hero--decorated {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     background-image: linear-gradient(to right,
             rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)), url(../images/bg.jpg);
-    background-repeat: no-repeat;
+            rgba(47, 48, 58, 0.4)), url(../images/hero1px-mob.jpg);
+    @include retina {
+        background-image: linear-gradient(to right,
+                    rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)), url(../images/hero2px-mob.jpg);
+    }
+
+    @include tablet {
+    background-image: linear-gradient(to right,
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+            url(../images/hero1px-tab.jpg);
+        @include retina {
+                background-image: linear-gradient(to right,
+                        rgba(47, 48, 58, 0.4),
+                        rgba(47, 48, 58, 0.4)), url(../images/hero2px-tab.jpg);
+            }
+
+    }
+
     @media screen and (min-width: 1200px) {
             background-size: 1600px 600px;
+            background-image: linear-gradient(to right,
+                        rgba(47, 48, 58, 0.4),
+                        rgba(47, 48, 58, 0.4)), url(../images/bg.jpg);
         }
-    background-position: center;
+    @include retina {
+        background-image: linear-gradient(to right,
+                    rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)), url(../images/hero2px.jpg);
+    }
+    
 }
 
 .hero__title {
