@@ -5,9 +5,25 @@
 
 .header__container {
     display: flex;
-    max-width: 100%;
+    margin: 0 auto;
     padding-top: 16px;
     padding-bottom: 16px;
+    @include tablet {
+        padding-top: 0;
+        padding-bottom: 0;
+    }    
+        @media screen and (min-width: 480px) {
+            max-width: 480px;
+        }
+    
+        @media screen and (min-width: 768px) {
+            max-width: 768px;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            max-width: 1200px;
+        }
+
     @include tablet {
     align-items: center;
     }
@@ -250,7 +266,7 @@
     font-weight: 500;
     font-size: 24px;
     @include mobile {
-        font-style: 34px;
+        font-size: 34px;
     }
     line-height: 1.18;
     letter-spacing: 0.02em;
@@ -261,7 +277,7 @@
     font-weight: 500;
         font-size: 18px;
         @include mobile {
-                font-style: 24px;
+                font-size: 24px;
             }
         line-height: 28px;
         letter-spacing: 0.02em;

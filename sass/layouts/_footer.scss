@@ -21,6 +21,9 @@
             align-items: baseline;
         }
     justify-content: center;
+    @include tablet {
+        justify-content: space-around;
+    }
     text-align: center;
         @include desktop {
             text-align: left;
