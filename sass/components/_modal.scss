@@ -60,6 +60,8 @@
     &:focus {
             color: var(--secondary-web-text-color);
         }
+        cursor: url('../images/finger.png'),
+        pointer;
 }
 
 .modal-close {

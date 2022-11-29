@@ -58,6 +58,7 @@ body {
   font-family: var(--main-font), sans-serif;
   background-color: var(--third-web-text-color);
   color: var(--main-text-color);
+  cursor: url("../images/cursor-ice.png"), default;
 }
 
 .flex {
@@ -194,6 +195,7 @@ img {
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: url("../images/finger.png"), pointer;
 }
 .modal-btn:hover, .modal-btn:focus {
   color: var(--secondary-web-text-color);
