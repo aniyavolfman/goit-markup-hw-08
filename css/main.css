@@ -58,7 +58,7 @@ body {
   font-family: var(--main-font), sans-serif;
   background-color: var(--third-web-text-color);
   color: var(--main-text-color);
-  cursor: url("../images/cursor-ice2.png"), auto;
+  cursor: url("../images/cursor.png"), auto;
 }
 
 .flex {
