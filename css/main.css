@@ -58,7 +58,7 @@ body {
   font-family: var(--main-font), sans-serif;
   background-color: var(--third-web-text-color);
   color: var(--main-text-color);
-  cursor: url("./cursor.png"), auto;
+  cursor: url("../cursor.png"), auto;
 }
 
 .flex {
