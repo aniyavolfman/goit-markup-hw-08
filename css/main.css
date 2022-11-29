@@ -583,6 +583,9 @@ textarea {
   .site-nav .link.site-nav__link--current-portfolio {
     color: var(--secondary-web-text-color);
   }
+  .site-nav .link.site-nav__link--current-contacts {
+    color: var(--secondary-web-text-color);
+  }
   .site-nav .site-nav__link--top:hover, .site-nav .site-nav__link--top:focus {
     color: var(--secondary-web-text-color);
   }
@@ -606,6 +609,18 @@ textarea {
   content: "";
   background-color: var(--secondary-web-text-color);
   width: 78px;
+  height: 4px;
+  bottom: 0;
+  left: 0;
+  border-radius: 2px;
+}
+
+.site-nav__link--current-contacts::before {
+  display: inline-block;
+  position: absolute;
+  content: "";
+  background-color: var(--secondary-web-text-color);
+  width: 70px;
   height: 4px;
   bottom: 0;
   left: 0;
@@ -1515,4 +1530,128 @@ textarea {
   .footer-label {
     transform: translateY(-50%);
   }
+}
+
+.contacts-page {
+  background-color: var(--background-dark);
+  text-align: center;
+  padding-top: 118px;
+  padding-bottom: 118px;
+}
+
+.contacts-page--decorated {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero1px-mob.jpg);
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .contacts-page--decorated {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero2px-mob.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .contacts-page--decorated {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero1px-tab.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .contacts-page--decorated {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero2px-tab.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts-page--decorated {
+    background-size: 1600px 600px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg.jpg);
+  }
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .contacts-page--decorated {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero2px.jpg);
+  }
+}
+
+.contacts-page__title {
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 1.62;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--third-web-text-color);
+  margin-top: 0;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 360px;
+}
+@media screen and (min-width: 480px) {
+  .contacts-page__title {
+    font-size: 26px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts-page__title {
+    font-size: 44px;
+    line-height: 1.36;
+    max-width: 696px;
+  }
+}
+
+.contacts-page__btn {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: var(--third-web-text-color);
+  background: var(--secondary-web-text-color);
+  box-shadow: 0px 4px 4px var(--button-rgba);
+  padding: 10px 24px;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 480px) {
+  .contacts-page__btn {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts-page__btn {
+    padding: 10px 32px;
+  }
+}
+.contacts-page__btn:hover, .contacts-page__btn:focus {
+  background-color: var(--button-active);
+}
+
+.contacts-page_phone {
+  width: 100%;
+  color: var(--third-web-text-color);
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.88;
+  padding-top: 18px;
+  padding-bottom: 20px;
+  margin-bottom: 60px;
+  border: 3px solid var(--secondary-web-text-color);
+  border-radius: 25px;
+}
+@media screen and (min-width: 1200px) {
+  .contacts-page_phone {
+    font-size: 24px;
+  }
+}
+
+.contacts-page_phone_item {
+  width: 100%;
+}
+
+.colored {
+  color: var(--secondary-web-text-color);
+}
+
+.colored-white {
+  color: var(--third-web-text-color);
 }/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,132 @@
+.contacts-page {
+    background-color: var(--background-dark);
+    text-align: center;
+    padding-top: 118px;
+    padding-bottom: 118px;
+}
+
+.contacts-page--decorated {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)), url(../images/hero1px-mob.jpg);
+
+    @include retina {
+        background-image: linear-gradient(to right,
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)), url(../images/hero2px-mob.jpg);
+    }
+
+    @include tablet {
+    background-image: linear-gradient(to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url(../images/hero1px-tab.jpg);
+
+    @include retina {
+        background-image: linear-gradient(to right,
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)), url(../images/hero2px-tab.jpg);
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    background-size: 1600px 600px;
+    background-image: linear-gradient(to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)), url(../images/bg.jpg);
+}
+
+@include retina {
+    background-image: linear-gradient(to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)), url(../images/hero2px.jpg);
+}
+}
+
+.contacts-page__title {
+    font-weight: 900;
+    font-size: 18px;
+
+    @media screen and (min-width: 480px) {
+        font-size: 26px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 44px;
+        line-height: 1.36;
+        max-width: 696px;
+    }
+
+    line-height: 1.62;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--third-web-text-color);
+    margin-top: 0;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 360px;
+}
+
+.contacts-page__btn {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+
+    @media screen and (min-width: 480px) {
+        font-size: 16px;
+    }
+
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: var(--third-web-text-color);
+    background: var(--secondary-web-text-color);
+    box-shadow: 0px 4px 4px var(--button-rgba);
+    padding: 10px 24px;
+
+    @media screen and (min-width: 1200px) {
+        padding: 10px 32px;
+    }
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color: var(--button-active);
+    }
+}
+
+.contacts-page_phone {
+    width: 100%;
+    color: var(--third-web-text-color);
+    font-size: 18px;
+    @include desktop {
+        font-size: 24px;
+    }
+    font-weight: bold;
+    line-height: 1.88;
+    padding-top: 18px;
+    padding-bottom: 20px;
+    margin-bottom: 60px;
+    border: 3px solid var(--secondary-web-text-color);
+    border-radius: 25px;
+    
+}
+
+.contacts-page_phone_item {
+    width: 100%;
+}
+
+.colored {
+    color: var(--secondary-web-text-color);
+}
+
+.colored-white {
+    color: var(--third-web-text-color);
+}

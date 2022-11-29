@@ -78,10 +78,15 @@
         color: var(--secondary-web-text-color);
     }
 
-    & .link.site-nav__link--current-portfolio {
+    & .link.site-nav__link--current-portfolio  {
 
         color: var(--secondary-web-text-color);
     }
+
+    & .link.site-nav__link--current-contacts {
+    
+            color: var(--secondary-web-text-color);
+        }
 
     & .site-nav__link--top:hover,
     & .site-nav__link--top:focus {
@@ -113,6 +118,20 @@
         content: '';
         background-color: var(--secondary-web-text-color);
         width: 78px;
+        height: 4px;
+        bottom: 0;
+        left: 0;
+        border-radius: 2px;
+    }
+}
+
+.site-nav__link--current-contacts {
+    &::before {
+        display: inline-block;
+        position: absolute;
+        content: '';
+        background-color: var(--secondary-web-text-color);
+        width: 70px;
         height: 4px;
         bottom: 0;
         left: 0;
