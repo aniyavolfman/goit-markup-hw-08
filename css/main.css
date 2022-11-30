@@ -849,6 +849,38 @@ textarea {
   flex-direction: column;
 }
 
+.anchor {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .anchor {
+    z-index: 3;
+    position: fixed;
+    display: flex;
+    right: 30px;
+    bottom: 30px;
+    width: 74px;
+    height: 74px;
+    border-radius: 50%;
+    background-color: var(--secondary-web-text-color);
+    color: var(--third-web-text-color);
+    border: none;
+    letter-spacing: 0.06em;
+    line-height: 1.88;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: inherit;
+    font-weight: bold;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .anchor:hover, .anchor:focus {
+    background-color: var(--button-active);
+  }
+}
+
 .hero {
   background-color: var(--background-dark);
   text-align: center;
