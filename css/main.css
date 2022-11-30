@@ -1239,9 +1239,15 @@ textarea {
 
 .portfolio-nav {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   gap: 8px;
+  flex-wrap: wrap;
   margin-bottom: 50px;
+}
+@media screen and (min-width: 768px) {
+  .portfolio-nav {
+    justify-content: center;
+  }
 }
 .portfolio-nav .portfolio-btn {
   display: block;
@@ -1254,14 +1260,30 @@ textarea {
 .flex-portfolio {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   gap: 30px;
+}
+@media screen and (min-width: 768px) {
+  .flex-portfolio {
+    flex-direction: row;
+  }
 }
 
 .flex-element {
-  width: calc((100% - 60px) / 3);
+  width: 100%;
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) {
+  .flex-element {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .flex-element {
+    width: calc((100% - 60px) / 3);
+  }
 }
 .flex-element:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);

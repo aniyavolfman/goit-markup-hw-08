@@ -37,8 +37,12 @@
 
 .portfolio-nav {
     display: flex;
-    justify-content: center;
+    justify-content: left;
+    @include tablet {
+        justify-content: center;
+    }
     gap: 8px;
+    flex-wrap: wrap;
     margin-bottom: 50px;
     & .portfolio-btn {
             display: block;
@@ -53,11 +57,21 @@
 .flex-portfolio {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
+    @include tablet {
+        flex-direction: row;
+    }
     gap: 30px;
 }
 
 .flex-element {
-    width: calc((100% - 60px) / 3);
+    width: 100%;
+    @include tablet {
+        width: calc((100% - 30px) / 2);
+    }
+    @include desktop {
+        width: calc((100% - 60px) / 3);
+    }
     transition-property: box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
