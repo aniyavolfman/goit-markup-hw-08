@@ -881,7 +881,161 @@ textarea {
   }
 }
 
+.finger {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  right: 15%;
+  top: 50%;
+  -webkit-animation-name: spin;
+          animation-name: spin;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.finger2 {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  left: 15%;
+  top: 20%;
+  -webkit-animation-name: spin;
+          animation-name: spin;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.brush {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  left: 25%;
+  top: 50%;
+  -webkit-animation-name: spin;
+          animation-name: spin;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.brush2 {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  right: 25%;
+  top: 30%;
+  -webkit-animation-name: spin;
+          animation-name: spin;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.romb {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  border: 1px solid white;
+  border-radius: 20%;
+  right: 25%;
+  top: 60%;
+  -webkit-animation-name: spin;
+          animation-name: spin;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.romb2 {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  border: 1px solid white;
+  border-radius: 20%;
+  right: 49%;
+  top: 70%;
+  -webkit-animation-name: spin;
+          animation-name: spin;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.romb3 {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  border: 1px solid white;
+  border-radius: 20%;
+  right: 75%;
+  top: 30%;
+  -webkit-animation-name: spin;
+          animation-name: spin;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.romb4 {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  border: 1px solid white;
+  border-radius: 20%;
+  left: 20%;
+  bottom: 20%;
+  -webkit-animation-name: spin;
+          animation-name: spin;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .hero {
+  position: relative;
   background-color: var(--background-dark);
   text-align: center;
   padding-top: 118px;
