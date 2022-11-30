@@ -1,4 +1,7 @@
 .header {
+    position: fixed;
+    z-index: 3;
+    width: 100%;
     background-color: var(--third-web-text-color);
     border-bottom: 1px solid var(--header-border);
 }

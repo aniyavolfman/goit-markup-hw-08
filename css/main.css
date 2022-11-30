@@ -498,6 +498,9 @@ textarea {
 }
 
 .header {
+  position: fixed;
+  z-index: 3;
+  width: 100%;
   background-color: var(--third-web-text-color);
   border-bottom: 1px solid var(--header-border);
 }
@@ -852,7 +855,7 @@ textarea {
 .hero {
   background-color: var(--background-dark);
   text-align: center;
-  padding-top: 118px;
+  padding-top: 208px;
   padding-bottom: 118px;
 }
 @media screen and (min-width: 1200px) {
@@ -1202,6 +1205,10 @@ textarea {
   .icon-list__item {
     width: calc((100% - 150px) / 6);
   }
+}
+
+.section_portfolio {
+  padding-top: 140px;
 }
 
 .portfolio-btn {
