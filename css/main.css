@@ -1590,9 +1590,14 @@ textarea {
 
 .contacts-page {
   background-color: var(--background-dark);
+  display: flex;
   text-align: center;
   padding-top: 118px;
   padding-bottom: 118px;
+  min-height: 100vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
 .contacts-page--decorated {
