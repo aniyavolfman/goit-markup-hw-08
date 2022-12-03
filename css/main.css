@@ -498,6 +498,11 @@ textarea {
 }
 
 .header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
   background-color: var(--third-web-text-color);
   border-bottom: 1px solid var(--header-border);
 }
@@ -1038,12 +1043,12 @@ textarea {
   position: relative;
   background-color: var(--background-dark);
   text-align: center;
-  padding-top: 118px;
+  padding-top: 198px;
   padding-bottom: 118px;
 }
 @media screen and (min-width: 1200px) {
   .hero {
-    padding-top: 200px;
+    padding-top: 280px;
     padding-bottom: 200px;
   }
 }
@@ -1071,7 +1076,6 @@ textarea {
 }
 @media screen and (min-width: 1200px) {
   .hero--decorated {
-    background-size: 1600px 600px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg.jpg);
   }
 }
@@ -1388,6 +1392,10 @@ textarea {
   .icon-list__item {
     width: calc((100% - 150px) / 6);
   }
+}
+
+.section-portfolio {
+  padding-top: 174px;
 }
 
 .portfolio-btn {
@@ -1746,7 +1754,7 @@ textarea {
   background-color: var(--background-dark);
   display: flex;
   text-align: center;
-  padding-top: 118px;
+  padding-top: 198px;
   padding-bottom: 118px;
   min-height: 100vh;
   width: 100%;

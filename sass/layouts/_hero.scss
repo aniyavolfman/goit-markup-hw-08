@@ -147,10 +147,10 @@
     position: relative;
     background-color: var(--background-dark);
     text-align: center;
-    padding-top: 118px;
+    padding-top: 198px;
     padding-bottom: 118px;
     @media screen and (min-width: 1200px) {
-        padding-top: 200px;
+        padding-top: 280px;
         padding-bottom: 200px;
         }
 }
@@ -182,7 +182,6 @@
     }
 
     @media screen and (min-width: 1200px) {
-            background-size: 1600px 600px;
             background-image: linear-gradient(to right,
                         rgba(47, 48, 58, 0.4),
                         rgba(47, 48, 58, 0.4)), url(../images/bg.jpg);
