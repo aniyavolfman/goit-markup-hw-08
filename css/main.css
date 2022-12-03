@@ -1394,10 +1394,6 @@ textarea {
   }
 }
 
-.section-portfolio {
-  padding-top: 174px;
-}
-
 .portfolio-btn {
   font-style: normal;
   font-weight: 500;
@@ -1754,7 +1750,7 @@ textarea {
   background-color: var(--background-dark);
   display: flex;
   text-align: center;
-  padding-top: 198px;
+  padding-top: 118px;
   padding-bottom: 118px;
   min-height: 100vh;
   width: 100%;
