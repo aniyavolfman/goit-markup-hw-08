@@ -156,9 +156,9 @@
 }
 
 .hero--decorated {
-    background-position: center;
+    background-position: bottom;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 768px 400px;
     background-image: linear-gradient(to right,
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)), url(../images/hero1px-mob.jpg);
@@ -182,6 +182,7 @@
     }
 
     @media screen and (min-width: 1200px) {
+        background-size: 1600px 600px;
             background-image: linear-gradient(to right,
                         rgba(47, 48, 58, 0.4),
                         rgba(47, 48, 58, 0.4)), url(../images/bg.jpg);

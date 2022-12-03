@@ -498,7 +498,7 @@ textarea {
 }
 
 .header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -1054,9 +1054,9 @@ textarea {
 }
 
 .hero--decorated {
-  background-position: center;
+  background-position: bottom;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 768px 400px;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero1px-mob.jpg);
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -1076,6 +1076,7 @@ textarea {
 }
 @media screen and (min-width: 1200px) {
   .hero--decorated {
+    background-size: 1600px 600px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg.jpg);
   }
 }
@@ -1391,6 +1392,15 @@ textarea {
 @media screen and (min-width: 1200px) {
   .icon-list__item {
     width: calc((100% - 150px) / 6);
+  }
+}
+
+.section-portfolio {
+  padding-top: 140px;
+}
+@media screen and (min-width: 1200px) {
+  .section-portfolio {
+    padding-top: 177px;
   }
 }
 
@@ -1750,7 +1760,7 @@ textarea {
   background-color: var(--background-dark);
   display: flex;
   text-align: center;
-  padding-top: 118px;
+  padding-top: 198px;
   padding-bottom: 118px;
   min-height: 100vh;
   width: 100%;

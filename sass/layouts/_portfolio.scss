@@ -1,4 +1,10 @@
-
+.section-portfolio {
+    padding-top: 140px;
+    @include desktop {
+        padding-top: 177px;
+    }
+    
+}
 .portfolio-btn {
     font-style: normal;
     font-weight: 500;
