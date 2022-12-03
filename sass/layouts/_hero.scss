@@ -147,16 +147,16 @@
     position: relative;
     background-color: var(--background-dark);
     text-align: center;
-    padding-top: 198px;
+    padding-top: 118px;
     padding-bottom: 118px;
     @media screen and (min-width: 1200px) {
-        padding-top: 280px;
+        padding-top: 200px;
         padding-bottom: 200px;
         }
 }
 
 .hero--decorated {
-    background-position: bottom;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: 768px 400px;
     background-image: linear-gradient(to right,
