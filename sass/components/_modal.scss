@@ -32,7 +32,7 @@
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     padding: 40px 20px;
         @include mobile {
-            padding: 20px;
+            padding: 40px;
         }
     text-align: center;
 }

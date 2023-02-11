@@ -172,7 +172,7 @@ img {
 }
 @media screen and (min-width: 480px) {
   .modal {
-    padding: 20px;
+    padding: 40px;
   }
 }
 
